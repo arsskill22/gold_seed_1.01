@@ -1191,83 +1191,40 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-    /* Логотип */
-    .logo img {
-        width: 100%;  /* Логотип будет занимать всю ширину */
-        height: auto; /* Пропорциональное изменение высоты */
-    }
-
-    /* Стили для навигации */
-    nav {
-        grid-template-columns: 1fr 1fr;  /* Менее колонок в навигации */
-        gap: 10px;
-    }
-
-    nav img {
-        width: 100%;  /* Изображения в навигации занимают всю ширину */
-    }
-
-    /* Карточки с информацией */
-    .item_info {
-        width: 90%;  /* Ширина элемента уменьшена для мобильных */
-        margin-left: 5%;
-        margin-right: 5%;
-        font-size: 1.5vh;
-    }
-
-    /* Адаптация для футера */
-    footer {
-        font-size: 14px;
-    }
-
-    .footer-container {
-        flex-direction: column;  /* Стилизуем футер для мобильных */
-        align-items: center;
-    }
-
-    .footer-container .contact-info,
-    .footer-container .footer-links {
-        width: 100%;  /* Все элементы футера занимают всю ширину */
+    .ab_site {
+        grid-template-columns: 1fr;  /* Сетка становится одной колонкой */
     }
 
     .feedback {
-        padding: 10%;
+        padding: 5%;
         background-size: cover;
         background-position: center;
     }
 
-    /* Прочие стили */
-    .area {
-        margin-left: 2%;
-        margin-right: 2%;
+    .elem {
+        width: 100%;  /* Карточки на мобильных становятся по ширине */
+        height: auto;
     }
 
-    .ab_site {
-        grid-template-columns: 1fr; /* Колонки становятся вертикальными */
+    .discount_cards,
+    .usual_cards {
+        flex-direction: column;  /* Карточки выстраиваются вертикально */
+    }
+
+    .site_slogan h2 {
+        font-size: 22px; /* Меньший размер шрифта на мобильных */
+    }
+
+    .site_slogan p {
+        font-size: 18px; /* Меньший размер шрифта на мобильных */
     }
 
     .com_but {
-        font-size: 3vh;
+        padding: 2% 4%;
+        font-size: 2.8vh;
     }
 
-    /* Стили для скидок и карточек */
-    .discount_cards,
-    .usual_cards {
-        flex-direction: column; /* Стили для мобильных */
-        gap: 20px;
-    }
-
-    .elem {
-        width: 100%;
-        height: auto;
-    }
-
-    .elem img {
-        width: 100%;
-        height: auto;
-    }
-
-    .spliter {
-        grid-template-columns: 1fr;
+    .input_field {
+        width: 12vh; /* Уменьшаем размер полей ввода */
     }
 }
