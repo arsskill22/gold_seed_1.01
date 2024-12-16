@@ -1227,4 +1227,10 @@ footer {
     .input_field {
         width: 12vh; /* Уменьшаем размер полей ввода */
     }
+
+    .catalog_del{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap:wrap;
+}
 }
