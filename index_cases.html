@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <script src="com_show.js"></script>
+    <title>zolotoe!semechko_zakazi</title>
+</head>
+<body>
+    <div class="area">
+        <header class="triple">
+            <div class="logo"><img src="images/золотое_семечко_main.jpg" alt="logo" onclick="window.location.href='index.html'"></div>
+            <div class="poisk">
+                <div><h1>Поиск покупок по почте заказа:</h1></div>
+
+                <div class="order_find_buttons" >
+                    <div class="find_place">
+                        <label for="phone">Введите почту:</label>
+                        <input class="input_field" type="text" id="phone" name="phone" placeholder="exаmple@mail.com">
+                        <button onclick="searchOrders()">Найти</button>
+                    </div>
+                    <div class="check_place">
+                        <div id="codeVerification" style="display:none;">
+                            <label for="verificationCode">Введите код подтверждения:</label>
+                            <input class= "input_field" type="text" id="verificationCode" name="verificationCode">
+                            <button onclick="verifyCode()">Подтвердить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="small_info">
+                    <p>После ввода почты и подтверждения вы можете указать адрес доставки и запросить не найденый на сайте товар.</p>
+                </div>
+            
+            </div>
+
+            <div class="delivery" style="display: none;">
+                <p>Доставка по почте, либо в пункт выдачи СДЭК. Укажите адрес почтового отделения или пункта выдачи СДЭК. Если вы уже указывали адрес, то он будет изменён. </p>
+                <input class="input_field" id="delivery_address"placeholder="Почтовое отделение, СДЭК" >
+                <button onclick="send_delivery_address()" >Отправить</button>
+            </div>
+        </header>
+    
+
+        <h2 class="here_order"><p>Результаты поиска:</p></h2>
+        <div id="results"></div>
+    </div>
+
+    <footer class="speshial_foot">
+        <div class="footer-container">
+          <div class="contact-info">
+            <p><strong>Контакты:</strong></p>
+            <p>Email: <a href="mailto:garsenij413@gmail.com">garsenij413@gmail.com</a></p>
+            <p>Телефон: +7 916 770 44 21</p>
+            <p>Адрес офиса: Цветной бульвар 5а, г Москва</p>
+          </div>
+          
+          <div class="footer-links">
+            <ul>
+              <li onclick="scrolltoelement('site_slogan')"><a>О нас</a></li>
+              <li><a href="index_ogorod.html">Все товары</a></li>
+              <li><a href="index_cases.html">Доставка</a></li>
+              <li><a href="index_cases.html">Корзина</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p> &copy; 2024 Золотое семечко. Учебный проект.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

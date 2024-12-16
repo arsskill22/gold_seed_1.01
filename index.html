@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="com_show.js"></script>
+    <title>zolotoe!semechko_main</title>
+</head>
+<body>
+    <div class="area">
+        <header>
+            <div class="logo"><img src="images/золотое_семечко_main.jpg" alt="logo"></div>
+            <nav> 
+                <div class="change_back_one" onclick="scrolltoelement('catalog')">
+                    <p>Каталог</p>
+                    <div class="item_info"> Поговаривают, что здесь можно купить даже семена конопли...</div>
+                </div>
+    
+                <div class="change_back_two" onclick="window.location.href='index_shops.html';">
+                    <p>Наши адреса</p>
+                    <div class="item_info">Мы торгуем семянами не только в интернете. Приходте к нам, мы рады каждому клиенту! </div>
+                </div>
+                <div class="change_back_thr" onclick="window.location.href='index_cases.html'">
+                    <p>Корзина и доставка</p>
+                    <div class="item_info">Здесь вы можете посмотреть ваш полный заказ и выбрать пункт получения.</div>
+                </div>
+                <div class="change_back_fo" onclick="window.location.href='index_cases.html'">
+                    <p>Сорта на заказ</p>
+                    <div class="item_info">Если вы не нашли нужные семена, то мы вам не поверим. Ладно, верим, закажите их здесь.</div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="ab_site">
+            <div class="feedback">
+                <form align="center" id="comment-form">
+                    <label for="username">Имя:</label>
+                    <input class="input_field" id="username" name="username" required><br><br>
+                    <label for="comment">Комментарий:</label><br>
+                    <textarea class="comment_field" id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+                    <button class="com_but"type="submit">Отправить</button>
+                </form>
+                <div id="comments-container", class="com">
+                </div>
+            </div>
+            <div class="site_slogan" id="site_slogan">
+                <h2>Добро пожаловать в онлайн-магазин "Золотое семечко" – Ваш надежный поставщик свежих семян!</h2>
+                <p>Мы понимаем, как важно выбрать лучшие семена для посадки в огороде, саду и даже на подаконнике. Наша миссия – предоставить вам широкий ассортимент семян высшего качества, которые гарантируют максимальный уровень всхожести и хорошие видовые качества растения.</p>
+                <h2>Почему вы обязаны выбрать нас?</h2>
+                <p><b>Широкий ассортимент:</b> От классических овощей и фруктов до редких и экзотических растений – у нас вы найдете всё, что нужно для вашего сада.</p>
+                <p><b>Гарантия качества:</b> Мы сотрудничаем только с проверенными производителями, обеспечивая свежесть и высокую всхожесть каждой упаковки семян.</p>
+                <p><b>Помощь экспертов:</b> Не знаете, какие семена выбрать или как ухаживать за растениями? Наши специалисты помогут вам советом и рекомендациями.К тому же на каждой пачке вы найдёте инструкцию к посадке и уходу за растением.</p>
+                <p ><b>Найдём любое растение:</b> вы можете заказать даже то растение, которого нет у нас в наличии. Ваш запрос - наши заботы!</p>
+            </div>
+        </div>
+        
+        <div class="dis_name">
+            <p>Акции и хиты</p>
+        </div>
+    
+        <div class="discount_cards"> 
+            <div class="elem" onclick="flipсard(this, event)">
+                <div class="card-image-contaner">
+                    <img src="images/Тыква Биг Макс(sad-i-ogorod.ru).jpg"  alt="product image" class="product-image">
+                    <div class="overlay">
+                        <p>Сезонный хит</p>
+                    </div>
+                    <div class="score">
+                        <p>4.87</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Тыква Биг Макс</h3>
+                    <div class="spliter">
+                        <div class="card-button">
+                            <div class="plus-minus">
+                                <button class="decrease">-</button>
+                                <span class="counter">1</span>
+                                <button class="increase">+</button>
+                            </div>
+                            <button class="orderButton">Заказать</button>
+                        </div>
+                        <div>
+                            <p class="price">64.00p</p>
+                            <p class="new-price">48.99р</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-back">
+                    <div class="description">
+                        <p>Среднеспелый крупноплодный сорт с повышенным содержанием каротина. Плоды розовато-оранжевые, сегментированные, гладкие. Хранятся до 70 дней. Мякоть плотная, сочная, сладкая, распадающаяся на волокна. Оранжевый цвет мякоти сохраняется после термической обработки. Стабильно высокая урожайность и хороший иммунитет к различным заболеваниям. Сорт устойчив к повышенным и пониженным температурам воздуха.</p>
+                        <div class="micro-cards">
+                            <div>
+                                <img src="images/sem_count.png">
+                                <p>4 семечки</p>
+                            </div>
+                            <div>
+                                <img src="images/timer.jpg">
+                                <p>110-130 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="elem" onclick="flipсard(this, event)">
+                <div class="card-image-contaner">
+                    <img src="images/Земляника Крапо 10 (sad-i-ogorod.ru).jpg"  alt="product image" class="product-image">
+                    <div class="overlay">
+                        <p>Pick me</p>
+                    </div>
+                    <div class="score">
+                        <p>4.97</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Земляника Крапо 10</h3>
+                    <div class="spliter">
+                        <div class="card-button">
+                            <div class="plus-minus">
+                                <button class="decrease">-</button>
+                                <span class="counter">1</span>
+                                <button class="increase">+</button>
+                            </div>
+                            <button class="orderButton">Заказать</button>
+                        </div>
+                        <div>
+                            <p class="price">339.00p</p>
+                            <p class="new-price">299.00р</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="description">
+                        <p>Как вам идея посадить в садовые кашпо не только цветы, но и ампельную землянику? Это просто потрясающе красиво и вкусно. Сильные и высокие многоплодные кисти поникают под тяжестью ярко-алых, крупных (30–50 г) ягод. Интересно, что даже неукорененные розетки на усах тоже со временем начинают выдавать сладкий урожай. Сорт ремонтантный. Можно выращивать дома.</p>
+                        <div class="micro-cards">
+                            <div>
+                                <img src="images/sem_count.png">
+                                <p>4 куста</p>
+                            </div>
+                            <div>
+                                <img src="images/timer.jpg">
+                                <p>90-100 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="elem" onclick="flipсard(this, event)">
+                <div class="card-image-contaner">
+                    <img src="images/Огурец Тайгер чудо F1(sad-i-ogorod.ru).jpg"  alt="product image" class="product-image">
+                    <div class="overlay">
+                        <p>Супер скидка</p>
+                    </div>
+                    <div class="score">
+                        <p>4.91</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Огурец Тайгер чудо</h3>
+                    <div class="spliter">
+                        <div class="card-button">
+                            <div class="plus-minus">
+                                <button class="decrease">-</button>
+                                <span class="counter">1</span>
+                                <button class="increase">+</button>
+                            </div>
+                            <button class="orderButton">Заказать</button>
+                        </div>
+                        <div>
+                            <p class="price">81.00p</p>
+                            <p class="new-price">59.99р</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-back">
+                    <div class="description">
+                        <p>Суперпучковый партенокарпик. Сверхвыносливый, не страдает метеозависимостью. Можно просто посадить и практически о нем забыть. Формирует крепкий стебель с несильным боковым ветвлением. После букетного периода почти под каждым листом появляются 3–4 завязи. Зеленцы бугорчатые, хрустящие и ароматные, длиной 12–14 см. Всего несколько таких растений могут обеспечить всю семью огурцами, и еще останется</p>
+                        <div class="micro-cards">
+                            <div>
+                                <img src="images/sem_count.png">
+                                <p>5 семечек</p>
+                            </div>
+                            <div>
+                                <img src="images/timer.jpg">
+                                <p>40-45 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="elem" onclick="flipсard(this, event)">
+                <div class="card-image-contaner">
+                    <img src="images/Дыня Кредо F1(sad-i-ogorod.ru).jpg"  alt="product image" class="product-image">
+                    <div class="overlay">
+                        <p>Сезонный хит</p>
+                    </div>
+                    <div class="score">
+                        <p>4.77</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Дыня Кредо F1</h3>
+                    <div class="spliter">
+                        <div class="card-button">
+                            <div class="plus-minus">
+                                <button class="decrease">-</button>
+                                <span class="counter">1</span>
+                                <button class="increase">+</button>
+                            </div>
+                            <button class="orderButton">Заказать</button>
+                        </div>
+                        <div>
+                            <p class="price">80.00p</p>
+                            <p class="new-price">67.99р</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-back">
+                    <div class="description">
+                        <p>Раннеспелый продуктивный гибрид с крупными плодами идеальной овальной формы сортотипа Ананас. Мякоть молочно-кремовая, плотная, сладкая и очень вкусная. Поверхность плодов насыщенного соломенно-жёлтого цвета. Улучшенное хранение благодаря плотной сетке. Растение мощное с отличным потенциалом завязывания плодов и хорошим набором устойчивостей к заболеваниям.</p>
+                        <div class="micro-cards">
+                            <div>
+                                <img src="images/sem_count.png">
+                                <p>4 семечки</p>
+                            </div>
+                            <div>
+                                <img src="images/timer.jpg">
+                                <p>65-80 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="elem" onclick="flipсard(this, event)">
+                <div class="card-image-contaner">
+                    <img src="images/Фасоль Ангелок(sad-i-ogorod.ru).jpg"  alt="product image" class="product-image">
+                    <div class="overlay">
+                        <p>Супер скидка</p>
+                    </div>
+                    <div class="score">
+                        <p>4.86</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Фасоль Ангелок</h3>
+                    <div class="spliter">
+                        <div class="card-button">
+                            <div class="plus-minus">
+                                <button class="decrease">-</button>
+                                <span class="counter">1</span>
+                                <button class="increase">+</button>
+                            </div>
+                            <button class="orderButton">Заказать</button>
+                        </div>
+                        <div>
+                            <p class="price">75.99p</p>
+                            <p class="new-price">55.00р</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-back">
+                    <div class="description">
+                        <p>Урожайный кустовой сорт овощной фасоли, зерна которой трехцветные: ослепительно белые с удивительно красивыми терракотовыми и розовыми пятнами. Стручки длиной 10-12 см слегка изогнутые, зеленого цвета, без жестких волокон, съедобны только в стадии молочной зрелости. Внутри каждого плода по 5-7 зерен среднего размера.Приготовленные бобы изумительно вкусные. Сорт среднеспелый, устойчивый к заболеваниям.</p>
+                        <div class="micro-cards">
+                            <div>
+                                <img src="images/sem_count.png">
+                                <p>10 семечек</p>
+                            </div>
+                            <div>
+                                <img src="images/timer.jpg">
+                                <p>70-80 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="elem" onclick="flipсard(this, event)">
+                <div class="card-image-contaner">
+                    <img src="images/Арбуз Холодок(sad-i-ogorod.ru).jpg"  alt="product image" class="product-image">
+                    <div class="overlay">
+                        <p>Топ 1 по заказам</p>
+                    </div>
+                    <div class="score">
+                        <p>4.96</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Арбуз Холодок</h3>
+                    <div class="spliter">
+                        <div class="card-button">
+                            <div class="plus-minus">
+                                <button class="decrease">-</button>
+                                <span class="counter">1</span>
+                                <button class="increase">+</button>
+                            </div>
+                            <button class="orderButton">Заказать</button>
+                        </div>
+                        <div>
+                            <p class="price">66.00p</p>
+                            <p class="new-price">49.99р</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-back">
+                    <div class="description">
+                        <p>Сорт «Холодок» — один из самых популярных и урожайных, отличающийся высокими товарными качествами, которые сохраняются до 3,5 месяцев после сбора. Кора средней толщины, мякоть ярко-красная с розовым оттенком, зернистая, нежная и сочная. Вкус — невероятно сладкий, с ароматом арбузной свежести, который дарит ощущение летней прохлады.</p>
+                        <div class="micro-cards">
+                            <div>
+                                <img src="images/sem_count.png">
+                                <p>8 семечек</p>
+                            </div>
+                            <div>
+                                <img src="images/timer.jpg">
+                                <p>90-100 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="new_block_bord"></div>
+
+        
+
+
+        <div class="catalog_del" >
+            <div class="sad"  onclick="window.location.href='index_ogorod.html'">
+                <div class="sad-ogorod_main_cards">
+                    <img src="images/ягоды_box.jpg">
+                    <h2>ягоды</h2>
+                </div>
+                <div class="sad-ogorod_main_cards">
+                    <img src="images/деревья_back.jpg">
+                    <h2>плодовые деревья и кустарники</h2>
+                </div>
+                <div class="sad-ogorod_main_cards">
+                    <img src="images/цветы_back.jpg">
+                    <h2>цветы</h2>
+                </div>
+                <div class="sad-ogorod_main_cards">
+                    <img src="images/декоративные_кусты_деревья.jpg">
+                    <h2>декоративные кустарники и деревья</h2>
+                </div>
+                <div class="sad-ogorod_main_cards">
+                    <img src="images/vsuakaia_vsiachina.jpg">
+                    <h2>И много чего ещё</h2>
+                </div>
+            </div>
+
+            
+    
+            <div class="ogorod" onclick="window.location.href='index_ogorod.html'">
+                <div class="sad-ogorod_main_cards">
+                    <img src="images/помидоры_preview.jpg">
+                    <h2>помидоры</h2>
+                </div>
+                <div class="sad-ogorod_main_cards">
+                    <img src="images/ogurez_preview.jpg">
+                    <h2>огурцы</h2>
+                </div>
+                <div class="sad-ogorod_main_cards">
+                    <img src="images/travi_preview.jpg">
+                    <h2>зелень и пряные травы</h2>
+                </div>
+                <div class="sad-ogorod_main_cards">
+                    <img src="images/korneplodi_preview.webp">
+                    <h2>корнеплоды</h2>
+                </div>
+                <div class="sad-ogorod_main_cards">
+                    <img src="images/luk_preview.webp">
+                    <h2>лук</h2>
+                </div>
+                <div class="sad-ogorod_main_cards">
+                    <img src="images/тыква_кабачок_патиссон.jpeg">
+                    <h2>Тыква, патиссон и кабачок</h2>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="contact-info">
+            <p><strong>Контакты:</strong></p>
+            <p>Email: <a href="mailto:garsenij413@gmail.com">garsenij413@gmail.com</a></p>
+            <p>Телефон: +7 916 770 44 21</p>
+            <p>Адрес офиса: Цветной бульвар 5а, г Москва</p>
+          </div>
+          
+          <div class="footer-links">
+            <ul>
+              <li onclick="scrolltoelement('site_slogan')"><a>О нас</a></li>
+              <li><a href="index_ogorod.html">Все товары</a></li>
+              <li><a href="index_cases.html">Доставка</a></li>
+              <li><a href="index_cases.html">Корзина</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p> &copy; 2024 Золотое семечко. Учебный проект.</p>
+        </div>
+    </footer>
+      
+
+
+    
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p id="totalMessage">Итоговая сумма: </p>
+            <form id="phoneForm">
+                <label for="phone">Введите вашу почту:</label>
+                <input type="text" id="phone" name="phone" required placeholder="Ваша почта">
+                <button type="submit" class="b_one">Отправить</button>
+            </form>
+            <button id="closeModal" class="b_two">Закрыть</button>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+
