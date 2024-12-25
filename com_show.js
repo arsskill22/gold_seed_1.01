@@ -1,7 +1,7 @@
 
 
 
-const ngrok_url = 'https://57b7-46-138-38-176.ngrok-free.app';
+const ngrok_url = 'https://fd4d-2a00-1fa0-46bf-d456-74cf-aa1-9b36-ccfb.ngrok-free.app';
 
 
 $('#comment-form').submit(function(event) {
